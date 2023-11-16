@@ -1,6 +1,18 @@
 
+# creat the repository on 16-Nov-23
 git clone https://github.com/dariushghasemi/two_sample_MR.git
 
+# query the genes in decode study
+ls /data/shared/External_results/Decode/Ferkingstad_2021/summary_data/*.gz | grep -E "C17orf107|MED14OS|FAM229A|C2CD4D|C22orf31|STPG2|NBPF26|IQANK1|SEC14L6|C10orf105"
+
+# take the header
+zcat /data/shared/External_results/Decode/Ferkingstad_2021/summary_data/11220_53_C10orf105_CJ105.txt.gz | head -1 | decode_pqtls_for_c10orf105_CJ105.txt
+
+# looking up the pQTLs:
+zcat /data/shared/External_results/Decode/Ferkingstad_2021/summary_data/11220_53_C10orf105_CJ105.txt.gz | awk '{if ($8 < 5e-8) { print }}' > decode_pqtls_for_c10orf105_CJ105.txt
+
+
+# looking up the eQTLs in GTEx for the postential pleiotropy
 touch 00_scripts.txt
 touch 01_query_gtex.py
 chmod +x 01_query_gtex.py
