@@ -1,0 +1,8 @@
+
+git clone https://github.com/dariushghasemi/two_sample_MR.git
+
+touch 00_scripts.txt
+touch 01_query_gtex.py
+chmod +x 01_query_gtex.py
+
+
