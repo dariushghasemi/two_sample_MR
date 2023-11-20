@@ -8,3 +8,4 @@ A two-sample Mendelian randomization analysis during Dianne's stay at Eurac Rese
 - Practical example of one-sample MR postponed to Monday (18:20, 17-Nov-23).
 
 - Git version control was convered. In addtion, we queried the variants in other genes in GTEx for tissue specific eQTLs for the vicinity genes (Mon, 19:00, 20-Nov-23).
+
