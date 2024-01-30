@@ -54,3 +54,4 @@ rsconnect/
 *.sh
 *.xlsx
 decode*.txt
+slurm*
