@@ -13,3 +13,7 @@ A two-sample Mendelian randomization analysis during Dianne's stay at Eurac Rese
 - The identified eQTL varinats were extracted from the CKDGen GWAS meta-analyis summary stats on eGFRcrea Overal (build 37) (Tue, 17:40, 21-Nov-23)!
 
 ### Preliminary results for two sample MR
+
+- For Ele, we used dynamic QTL endpoint of GTEX API V2 to find variant-gene expression of the interested genes being used for mendelian randomization using `03_query_gtex_genome.py` (Tue, 19:30, 30-Jan-24).
+
+-Dariush-
